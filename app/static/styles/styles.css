@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #fff !important
+}
+
+#content{
+    width: 800px;
+    margin:0 auto;
+}
+
+.table_header{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}

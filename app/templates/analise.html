@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h3>Máxima:</h3>
+    <p>{{ maxima.cidade }} com a temperatura de {{ maxima.max }} na data {{ maxima.data | date_format }} </p>
+
+    <h3>Precipitação:</h3>
+    
+    <table class="table table-striped">
+        <tr class="table_header">
+            <th>Cidade</th>
+            <th>Média</th>
+        </tr>
+        {%for weather in medias %} 
+        <tr>
+            <td>{{ weather.cidade | title }} </td>
+            <td>{{ weather.precipitacao | format_precipitation }} </td>
+        </tr>
+        {%endfor%} 
+    </table>
+{% endblock %}

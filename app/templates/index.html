@@ -1,0 +1,8 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h2>Home</h2>
+    {% if added %}
+        <span class="bg bg-success text-white" style="padding:3px;">Dados gravados no banco</span>
+    {% endif %}
+{% endblock %}
